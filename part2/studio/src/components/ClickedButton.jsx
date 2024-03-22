@@ -1,5 +1,12 @@
 function ClickedButton() {
-  return;
+  function handleClick() {
+    alert("You have now unpinned this!");
+  }
+  return (
+    <button id="clickedButton" onClick={handleClick}>
+      Saved
+    </button>
+  );
 }
 
 export default ClickedButton;
